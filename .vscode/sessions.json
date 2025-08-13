@@ -1,0 +1,52 @@
+{
+  "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v11/terminal-keeper.json",
+  "theme": "tribe",
+  "active": "default",
+  "activateOnStartup": true,
+  "keepExistingTerminals": false,
+  "sessions": {
+    "default": [
+      [
+        {
+          "name": "startClient",
+          "color": "terminal.ansiGreen",
+          "autoExecuteCommands": true,
+          "commands": [
+            "cd client/",
+            "yarn dev"
+          ],
+          "icon": "terminal"
+        },
+        {
+          "name": "commandClient",
+          "color": "terminal.ansiGreen",
+          "autoExecuteCommands": true,
+          "commands": [
+            "cd client/"
+          ],
+          "icon": "terminal"
+        },
+        {
+          "name": "startServerJSON",
+          "color": "terminal.ansiRed",
+          "autoExecuteCommands": true,
+          "commands": [
+            "cd client/",
+            "yarn server"
+          ],
+          "icon": "terminal"
+        }
+      ],
+      [
+        {
+          "name": "commandGit",
+          "color": "terminal.ansiYellow",
+          "commands": [
+            ""
+          ],
+          "icon": "logo-github"
+        }
+      ]
+    ]
+  }
+}
